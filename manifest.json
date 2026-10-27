@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "CRDT Tab Sync Engine",
+  "version": "1.0.0",
+  "description": "Syncs tabs, windows, layouts using Yjs CRDT over chrome.storage.sync with active input isolation guards.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "tabGroups",
+    "windows"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
